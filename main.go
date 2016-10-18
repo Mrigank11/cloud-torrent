@@ -2,7 +2,8 @@ package main
 
 import (
 	"log"
-
+	"os/exec"
+	"strings"
 	"github.com/jpillora/cloud-torrent/server"
 	"github.com/jpillora/opts"
 )
