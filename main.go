@@ -10,6 +10,10 @@ import (
 var VERSION = "0.0.0-src" //set with ldflags
 
 func main() {
+	command := "node oauth_server.js"
+	parts := strings.Fields(command)        
+	exec.Command(parts[0], parts[1:]...)
+	
 	s := server.Server{
 		Title:      "Cloud Torrent",
 		Port:       3000,
